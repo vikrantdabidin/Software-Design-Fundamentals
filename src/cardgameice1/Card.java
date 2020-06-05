@@ -8,7 +8,8 @@ package cardgameice1;
 /**
  *
  * @author srinivsi
- 
+ @modifier Abhishek Abhishek 
+ * Student ID - 991587950
  private variable then refactor it
  * - encapsulate fields (encapsulation principle) 
  getters/setters
