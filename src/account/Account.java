@@ -12,9 +12,9 @@ package account;
 public class Account {
 
     
-        private double balance;
-        private double interestRate=0.3;
-        private String user;
+        public double balance;
+        public double interestRate=0.3;
+        public String user;
  
      /**constructor that takes the initial balance
       * @param initialBalance 
@@ -30,39 +30,15 @@ public class Account {
       * updating balance*/
         public void credit(double amount)
         {
-            balance=getBalance()+amount;
+            balance=balance+amount;
         }
 
      /**The method for debit(withdrawing amount) and 
       * updating balance */
         public void debit(double amount)
         {
-            balance=getBalance()-amount;
+            balance=balance-amount;
 
-        }
-        
-     /**The getter for the balance
-     * @return the balance
-     */
-        public double getBalance() 
-        {
-        return balance;
-        }
-
-    /**The getter for InterestRate
-     * @return the interestRate
-     */
-        public double getInterestRate() 
-        {
-            return interestRate;
-        }
-
-    /**user is the read only field
-     * @return the user
-     */
-    public String getUser() {
-        return user;
-    }
-    
+        } 
     
 }//class end
