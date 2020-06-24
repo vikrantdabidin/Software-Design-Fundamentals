@@ -13,7 +13,7 @@ public class Account {
 
     
         private double balance;
-        private double interestRate=0.23;
+        private double interestRate=0.3;
         private String user;
  
      /**constructor that takes the initial balance
@@ -23,7 +23,7 @@ public class Account {
         {
             balance=initialBalance;
             user=givenUser;
-            //Note that the initial balance must be greater than 50.       
+            //To create an account the initial balance must be greater than 50.       
         }
 
      /**The method for depositing amount and 
