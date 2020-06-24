@@ -29,6 +29,6 @@ public class AccountTester {
         Account a=new Account(bal,user);
        
         System.out.println("The balance is: "+a.balance);  
-        System.out.println("The InterestRate per month is "+a.InterestRate);
+        System.out.println("The InterestRate per month is "+a.interestRate);
     }
 }
