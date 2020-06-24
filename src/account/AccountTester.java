@@ -6,15 +6,15 @@
 package account;
 import java.util.Scanner;
 /**
- * date: March 2nd
+ * date: June 24
  * @author Sivagama
  */
 public class AccountTester {
     
     public static void main(String[] args) {
-        /*here assumed that 500 accounts can be created
-        for the given bank*/
-        Account ac[]=new Account[500];
+        /*here assumed that 5 accounts can be created
+        for the given bank*/ 
+        Account[] ac=new Account[5];
         
         System.out.println("Please enter the amount by which you want to open an account:");
         
@@ -24,10 +24,10 @@ public class AccountTester {
         System.out.println("Please enter the unique user name:");
         sc.nextLine();
         String user=sc.nextLine();
-        
+        /* modify the code to store 5 accounts in array and print balance and InterestRate */
         Account a=new Account(bal,user);
         ac[0]=a;
-             
+      
         System.out.println("The balance is: "+a.getBalance());  
         System.out.println("The InterestRate per month is "+a.getInterestRate());
     }
