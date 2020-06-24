@@ -24,10 +24,10 @@ public class AccountTester {
         System.out.println("Please enter the unique user name:");
         sc.nextLine();
         String user=sc.nextLine();
-        /* modify the code to store 5 accounts in array and print balance and Interest for the available balance */
+        /* modify the code to store 5 accounts in array and print balance and monthly Interest for the available balance */
+        
         Account a=new Account(bal,user);
-        ac[0]=a;
-      
+       
         System.out.println("The balance is: "+a.getBalance());  
         System.out.println("The InterestRate per month is "+a.getInterestRate());
     }
